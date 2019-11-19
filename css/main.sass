@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap')
+$primary-color: #321312
+$secondary-color: #123738
+$bg-color: white
+$footer-color: #000
+span.mayuscula
+	text-transform: uppercase
+button
+	padding: 10px 20px
+	color: #fff
+	background: #000
+	border: none
+	cursor: pointer
+	margin-top: 15px
+	margin-bottom: 15px
+	&:hover
+		background: #222
+h1
+	font-size: 48px
+h2
+	font-size: 36px
+h3
+	font-size: 24px
+h4
+	font-size: 21px
+p
+	font-size: 18px
+
+	.marca
+		width: 150px
+		height: 60px
+		display: flex
+		text-align: center
+		img
+			width: 150px
+			height: 60px
+		p
+			width: 100%
+			display: block
+			text-align: center
+			color: #fff
+
+body
+	background: $bg-color
+	margin: 0 auto
+	font-family: 'Open Sans', sans-serif
+
+	header
+		background: #f2f2f2
+		img
+			width: 150px
+			height: auto
+		nav
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.nav-links
+				display: flex
+				a
+					font-size: 14px
+					margin: 0 8px
+					text-decoration: none
+					font-weight: 700
+					color: #000
+					text-transform: uppercase
+					box-sizing: border-box!important
+					&.active
+						border-bottom: 2px solid #000
+	main
+		.principal
+			img
+				width: 100%
+				margin: 20px 0px
+				&.border
+					border: 3px solid #000
+					box-sizing: border-box
+		section
+			padding: 45px 0px 25px 0px
+			&.gris
+				background: #f9f9f9
+			&.negro
+				background: #000
+			&.blanco
+				background: #fff
+			&.banner
+				padding: 45px 0px
+				h2
+					color: #fff
+					margin: 0
+					font-size: 24px
+			&.garantia
+				h2, h3
+					text-transform: uppercase
+				h2
+					font-size: 20px
+					font-weight: 800
+				h3
+					font-size: 22px
+			&.social
+				padding: 5px 0px
+				background: #e2e1e6
+				.logo
+					width: 75px
+					height: auto
+					margin: 0px
+			//pagina de productos
+			&.productos
+				.item
+					position: relative
+					.descripcion
+						position: absolute
+						bottom: 45px
+						width: 100%
+						text-align: center
+						.nombre
+							font-weight: 700
+							text-transform: uppercase
+							font-size: 18px
+							margin-bottom: 10px
+						.precio
+							font-weight: 400
+			//reparacion
+			&.no-tirar
+				font-size: 24px
+				img
+					width: 200px
+				.ubicaciones
+					margin-top: 20px
+					.item
+						position: relative
+						&:hover .text-item
+							display: block
+						&:hover img
+							-webkit-filter: brightness(30%)
+							filter: brightness(30%)
+						.text-item
+							position: absolute
+							bottom: 100px
+							width: 360px
+							text-align: center
+							display: none
+							.nombre
+								font-weight: 700
+								color: #fff
+								text-transform: uppercase
+								font-size: 20px
+								margin-bottom: 10px	
+							.direccion
+								color: rgba(255,255,255,0.9)
+								font-size: 14px
+						img
+							min-width: 100%
+							transition: filter .2s ease-in-out
+			//contacto
+			&.text-contacto
+				h2
+					text-transform: uppercase
+					font-size: 20px
+					letter-spacing: 1.5px
+					margin-top: 0px
+					margin-bottom: 10px
+			&.formulario
+				.caja-formulario
+					padding-right: 30px
+					form
+						width: 100%
+						.entrada
+							input,textarea
+								font-family: 'Open Sans', sans-serif
+								width: 100%
+								padding: 10px 20px
+								margin-bottom: 10px
+								border: 1px solid #C4C4C4
+								background: #FBFBFB
+								box-sizing: border-box
+								&::placeholder
+									color: #000
+									font-weight: 700
+								
+						.boton-envio input
+							background: #000
+							padding: 10px 20px
+							color: white
+							border: none
+							width: auto!important
+							cursor: pointer
+							&:hover
+								background: #222
+				img
+					width: 100%
+
+						
+						
+
+			
+
+	.principal
+		width: 1170px
+		margin: 0 auto
+		display: flex
+		align-items: center
+		justify-content: center
+		.columna
+			display: flex
+		.uno, .mitad, .tercera, .cuarta
+			padding-left: 15px
+			padding-right: 15px
+		.uno
+			width: 100%
+		.mitad
+			width: 50%
+		.tercera
+			width: 33.3%
+		.cuarta
+			width: 25%
+		.center
+			text-align: center
+		.block
+			display: block
+		.fila
+			align-items: center
+			justify-content: center
+			display: flex
+			width: 100%
+			.f-1, .f-2, .f-3, .f-4, .f-5, .f-6, .f-8, .f-10, .f-12
+				padding: 0px 15px
+			.f-1
+				width: calc(100% / 12)!important
+			.f-2
+				width: calc(100% / 6)!important
+			.f-3
+				width: calc(100% / 4)!important
+			.f-4
+				width: calc(100% / 3)!important
+			.f-5
+				width: calc(100% / 2.4)!important
+			.f-6
+				width: calc(100% / 2)!important
+			.f-8
+				width: calc(100% / 1.5)!important
+			.f-10
+				width: calc(100% / 1.2)!important
+			.f-12
+				width: calc(100% / 1)!important
+
+	footer
+		padding: 10px 0px
+		background: $footer-color
+		color: white
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	//libreria slider
+	.tns-controls
+		text-align: center
+		display: none
+	.tns-nav
+		text-align: center
+		button
+			padding: 10px!important
+			border-radius: 50%!important
+			background: #555
+	.tns-controls, .tns-nav
+		button
+			margin-left: 5px
+			margin-right: 5px
