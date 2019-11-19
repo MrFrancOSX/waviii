@@ -82,6 +82,8 @@ body {
       background: #fff; }
     body main section.banner {
       padding: 45px 0px; }
+      body main section.banner a {
+        text-decoration: none; }
       body main section.banner h2 {
         color: #fff;
         margin: 0;
